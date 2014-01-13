@@ -54,3 +54,11 @@ textarea {
 input, textarea {
   background: hsla(0,0%,0%,0);
 }
+
+/* bootstarp3 reset */
+.navbar-nav > li > a {
+  line-height: 1.1em;
+}
+.navbar-brand {
+  padding:1rem 15px;
+}

@@ -44,16 +44,23 @@
     <% } %>
   </head>
   <body>
+    
     <!-- navbar -->
-    <div class='navbar'>
-      <div class='navbar-inner'>
-        <div class='container'>
-          <a class='brand' href='/'><%- config.site_logo || config.name %></a>
-          <form id='search_form' class='navbar-search' action="/">
-            <input type='text' id='q' name='q' class='search-query span3' value='<%= locals.keyword || '' %>'/>
-          </form>
-          <ul class='nav pull-right'>
-            <li><a href='/'>首页</a></li>
+    <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><%- config.site_logo || config.name %></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse pull-right">
+          <ul class="nav navbar-nav">
             <%
             var site_navs = config.site_navs || [];
             for (var i = 0, l = site_navs.length; i < l; i++) {
@@ -74,12 +81,16 @@
             <li><a href='/signin'>登录</a></li>
             <% } %>
           </ul>
-        </div>
-      </div>
-    </div>
+        </div><!-- /.navbar-collapse -->
+
+        <form id='search_form' class='navbar-search header-search pull-left' action="/">
+            <input type='text' id='q' name='q' class='search-query span3' value='<%= locals.keyword || '' %>'/>
+          </form>
+      </div><!-- /.container -->
+    </nav>
     <!-- wrapper -->
-    <div id='wrapper' class="row">
-      <div id='main' class="">
+    <div id='wrapper' class="">
+      <div id='main' class="row">
         <%- body %>
       </div>
     </div>

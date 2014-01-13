@@ -12,7 +12,6 @@
 }
 
 #main {
-  width: 1060px;
   margin: 0px auto;
   padding: 0px 0px 30px 0px;
   min-height:400px;
@@ -52,7 +51,7 @@
   margin-top: 8px;
 }
 #footer_main {
-  width: 1040px;
+  width: 100%;
   margin: 0px auto;
   color: #e2e2e2;
   padding: 20px 0px;
@@ -549,7 +548,6 @@ textarea[id^=wmd-input] {
   box-shadow: none;
 }
 .navbar .container {
-  width: 1060px;
   margin: 4px auto;
 }
 .navbar .brand {
@@ -758,4 +756,37 @@ textarea.editor {
 .reply_content table tr th>:last-child,
 .reply_content table tr td>:last-child {
   margin-bottom:0;
+}
+
+
+#main {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+
+  display: box;
+  box-orient: horizontal;
+}
+
+#sidebar , #content {
+  width: 1%;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  margin: 0 1rem;
+  float: none;
+}
+#content {
+  -webkit-box-flex: 3;
+  -moz-box-flex: 3;
+  box-flex: 3;
+  margin-left: 4rem;
+}
+#sidebar {
+  
+}
+#footer_main {
+  padding: 20px 4rem;
 }
