@@ -1,3 +1,10 @@
+## 关于这个分支
+
+一直想吐槽cnodejs为啥不做个响应式设计，用手机看感觉不会再爱了~干脆自己动手，直接换上bootstrap3，IE8什么的都洗洗睡吧，哈哈！
+
+以上~
+
+
 # nodeclub [![Build Status](https://secure.travis-ci.org/cnodejs/nodeclub.png?branch=master)](http://travis-ci.org/cnodejs/nodeclub) [![依赖模块状态](https://david-dm.org/cnodejs/nodeclub.png)](http://david-dm.org/cnodejs/nodeclub)
 
 基于nodejs的社区系统
